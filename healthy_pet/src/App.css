@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+header {
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 900px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+nav .container ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .container ul .logo, .search-bar, .message-cart {
+  display: flex;
+}
+
