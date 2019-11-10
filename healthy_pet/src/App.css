@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -16,7 +17,9 @@ body {
 
 header {
   margin: 0 auto;
-  background-color: bisque;
+  padding: 10px 0;
+  background-color: #6180af;
+  margin-bottom: 5px;
 }
 
 .container {
@@ -37,7 +40,8 @@ nav .container ul .logo, .search-bar, .message-cart {
 .filter {
   display: flex;
   justify-content: space-between;
-  background-color: azure;
+  box-shadow: 0px 1px 3px #dcdcdc;
+  padding: 5px;
 }
 
 .items {
@@ -48,10 +52,36 @@ nav .container ul .logo, .search-bar, .message-cart {
 
 .item {
   text-align: center;
-  flex-basis: 21%;
-  height: 200px;
+  flex-basis: 23%;
+  height: auto;
   margin: 1%;
-  background-color: bisque;
-  padding: 1%;
+  /* background-color: bisque; */
+  padding: 2%;
+  box-shadow: 0px 1px 3px #dcdcdc;
+}
+
+.item div {
+  width: 100%;
+  margin-bottom: 15px;
+  background-color: #cbcbcb;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #8e8e8e;
+  font-size: 26px;
+}
+
+.item p{
+  font-size: 16px;
+  margin-bottom: 13px;
+}
+
+.item button {
+  width: 100%;
+  background-color: #ee6b21;
+  color: white;
+  font-size: 14px;
+  padding: 16px 0;
 }
 

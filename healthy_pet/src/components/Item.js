@@ -1,11 +1,14 @@
 import React from 'react'
+import dogImage from "../img/dog_img.jpeg"
 
 const Item = () => {
   return (
     <div className="item">
-      <img src="#" alt="product"/>
-      <p>name</p>
-      <p>price</p>
+      <div>
+        <div>Product</div>
+      </div>
+      <p>Product Name</p>
+      <button>$8.99</button>
     </div>
   )
 }
