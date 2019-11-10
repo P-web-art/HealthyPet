@@ -16,6 +16,7 @@ body {
 
 header {
   margin: 0 auto;
+  background-color: bisque;
 }
 
 .container {
@@ -36,5 +37,21 @@ nav .container ul .logo, .search-bar, .message-cart {
 .filter {
   display: flex;
   justify-content: space-between;
+  background-color: azure;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  text-align: center;
+  flex-basis: 21%;
+  height: 200px;
+  margin: 1%;
+  background-color: bisque;
+  padding: 1%;
 }
 
