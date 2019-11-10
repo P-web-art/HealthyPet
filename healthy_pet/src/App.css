@@ -33,3 +33,8 @@ nav .container ul .logo, .search-bar, .message-cart {
   display: flex;
 }
 
+.filter {
+  display: flex;
+  justify-content: space-between;
+}
+
