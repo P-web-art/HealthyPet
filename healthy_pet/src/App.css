@@ -15,17 +15,36 @@ body {
   margin: 0 auto;
 }
 
-header {
-  margin: 0 auto;
-  padding: 10px 0;
-  background-color: #6180af;
-  margin-bottom: 5px;
-}
-
 .container {
   max-width: 900px;
   width: 90%;
   margin: 0 auto;
+}
+
+header {
+  margin: 0 auto;
+  padding: 5px 0;
+  background-color: #6180af;
+  margin-bottom: 5px;
+  box-shadow: 0px 2px 3px #dcdcdc;
+  font-size: 15px;
+  color: white;
+}
+
+header input {
+  width: 80%;
+  padding: 10px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar img {
+  width: 30px;
+  height: auto;
 }
 
 nav .container ul {
@@ -33,15 +52,45 @@ nav .container ul {
   justify-content: space-between;
 }
 
-nav .container ul .logo, .search-bar, .message-cart {
+nav .container ul .logo, .search-bar form, .message-cart {
   display: flex;
+}
+
+.search-bar {
+  flex-basis: 50%;
+}
+
+.search-bar form {
+  flex-basis: 100%;
 }
 
 .filter {
   display: flex;
   justify-content: space-between;
-  box-shadow: 0px 1px 3px #dcdcdc;
+  box-shadow: 0px 4px 5px #dcdcdc;
   padding: 5px;
+  margin-bottom: 8px;
+  align-items: center;
+}
+
+.filter img {
+  display: none;
+  width: 40px;
+  height: auto;
+}
+
+.filter-option {
+  display: flex;
+  flex-basis: 65%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-option button {
+  padding: 4px;
+  background-color: #da5350;
+  color: white;
+  border-radius: 1px;
 }
 
 .items {
@@ -55,9 +104,9 @@ nav .container ul .logo, .search-bar, .message-cart {
   flex-basis: 23%;
   height: auto;
   margin: 1%;
-  /* background-color: bisque; */
   padding: 2%;
-  box-shadow: 0px 1px 3px #dcdcdc;
+  box-shadow: 0px 3px 5px #dcdcdc;
+  border-radius: 3px;
 }
 
 .item div {
@@ -85,3 +134,35 @@ nav .container ul .logo, .search-bar, .message-cart {
   padding: 16px 0;
 }
 
+@media (max-width: 700px) {
+  .item {
+    flex-basis: 42%;
+  }
+
+  .filter-option {
+    display: none;
+  }
+
+  .filter img {
+    display: inline-flex;
+  }
+}
+
+@media (max-width: 500px) {
+  .item {
+    flex-basis: 95%;
+  }
+
+  header {
+    font-size: 12px;
+    padding: 3px 0;
+  }
+
+  .filter-option {
+    display: none;
+  }
+
+  .filter img {
+    display: inline-flex;
+  }
+}
