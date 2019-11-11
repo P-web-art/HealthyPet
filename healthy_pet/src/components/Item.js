@@ -1,14 +1,15 @@
 import React from 'react'
 import dogImage from "../img/dog_img.jpeg"
 
-const Item = () => {
+const Item = (props) => {
+  console.log("from item",props)
   return (
     <div className="item">
       <div>
-        <div>Product</div>
+        <div>{props.item.name}</div>
       </div>
-      <p>Product Name</p>
-      <button>$8.99</button>
+      <p>Product {props.item.name}</p>
+      <button>${props.item.price}</button>
     </div>
   )
 }

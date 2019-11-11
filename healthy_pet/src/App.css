@@ -86,6 +86,12 @@ nav .container ul .logo, .search-bar form, .message-cart {
   align-items: center;
 }
 
+.filter-option select {
+  border: none;
+  border-radius: 0px;
+  padding: 10px 5px;
+}
+
 .filter-option button {
   padding: 4px;
   background-color: #da5350;

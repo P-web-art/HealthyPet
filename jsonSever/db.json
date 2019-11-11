@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Big Dog toy",
+      "price": 8.99
+    },
+    {
+      "id": "2",
+      "name": "Medium Dog toy",
+      "price": 2.99
+    },
+    {
+      "id": "3",
+      "name": "Small Dog toy",
+      "price": 1.99
+    },
+    {
+      "id": "4",
+      "name": "Big Cat toy",
+      "price": 8.99
+    },
+    {
+      "id": "5",
+      "name": "Medium Cat toy",
+      "price": 2.99
+    },
+    {
+      "id": "6",
+      "name": "Small Cat toy",
+      "price": 1.99
+    }
+  ]
+}
