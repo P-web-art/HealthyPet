@@ -12,15 +12,17 @@ const App = () => {
   useEffect(() => {
     axios.get("http://localhost:3001/products")
       .then(res => {
-        console.log(res.data)
         handleItems({isLoading: false, products: res.data})
+      })
+      .catch(err => {
+        console.log(err)
       })
   }, [])
 
   return (
     <div className="app">
-      <Header />
-      <Filter />
+      <Header handleItems={handleItems}/>
+      <Filter items={items} handleItems={handleItems}/>
       <ItemsList items={items}/>
     </div>
   );

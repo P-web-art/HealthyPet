@@ -3,32 +3,149 @@
     {
       "id": "1",
       "name": "Big Dog toy",
-      "price": 8.99
+      "price": 8.99,
+      "category": "toys",
+      "subCategory": "big"
     },
     {
       "id": "2",
       "name": "Medium Dog toy",
-      "price": 2.99
+      "price": 2.99,
+      "category": "toys",
+      "subCategory": "medium"
     },
     {
       "id": "3",
       "name": "Small Dog toy",
-      "price": 1.99
+      "price": 1.99,
+      "category": "toys",
+      "subCategory": "small"
     },
     {
       "id": "4",
       "name": "Big Cat toy",
-      "price": 8.99
+      "price": 7.99,
+      "category": "toys",
+      "subCategory": "big"
     },
     {
       "id": "5",
       "name": "Medium Cat toy",
-      "price": 2.99
+      "price": 6.99,
+      "category": "toys",
+      "subCategory": "medium"
     },
     {
       "id": "6",
       "name": "Small Cat toy",
-      "price": 1.99
+      "price": 5.99,
+      "category": "toys",
+      "subCategory": "small"
+    },
+    {
+      "id": "7",
+      "name": "Big Fish toy",
+      "price": 3.99,
+      "category": "toys",
+      "subCategory": "big"
+    },
+    {
+      "id": "8",
+      "name": "Small fish toy",
+      "price": 1.99,
+      "category": "toys",
+      "subCategory": "small"
+    },
+    {
+      "id": "9",
+      "name": "Big Dog Meds",
+      "price": 8.99,
+      "category": "medicines",
+      "subCategory": "big"
+    },
+    {
+      "id": "10",
+      "name": "Medium Dog Meds",
+      "price": 2.99,
+      "category": "medicines",
+      "subCategory": "medium"
+    },
+    {
+      "id": "11",
+      "name": "Small Dog Meds",
+      "price": 1.99,
+      "category": "medicines",
+      "subCategory": "small"
+    },
+    {
+      "id": "12",
+      "name": "Big Cat Meds",
+      "price": 8.99,
+      "category": "medicines",
+      "subCategory": "big"
+    },
+    {
+      "id": "13",
+      "name": "Medium Cat Meds",
+      "price": 2.99,
+      "category": "medicines",
+      "subCategory": "medium"
+    },
+    {
+      "id": "14",
+      "name": "Small Cat Meds",
+      "price": 1.99,
+      "category": "medicines",
+      "subCategory": "small"
+    },
+    {
+      "id": "15",
+      "name": "Big Fish Meds",
+      "price": 5.99,
+      "category": "medicines",
+      "subCategory": "big"
+    },
+    {
+      "id": "16",
+      "name": "Small fish Meds",
+      "price": 1.99,
+      "category": "medicines",
+      "subCategory": "small"
+    },
+    {
+      "id": "17",
+      "name": "Medium Dog food",
+      "price": 24.99,
+      "category": "foods",
+      "subCategory": "medium"
+    },
+    {
+      "id": "18",
+      "name": "Small Dog Food",
+      "price": 18.99,
+      "category": "foods",
+      "subCategory": "small"
+    },
+    {
+      "id": "19",
+      "name": "Big Cat Food",
+      "price": 21.99,
+      "category": "foods",
+      "subCategory": "big"
+    },
+    {
+      "id": "20",
+      "name": "Medium Cat Food",
+      "price": 14.99,
+      "category": "foods",
+      "subCategory": "medium"
+    },
+    {
+      "id": "21",
+      "name": "Medium Fish Food",
+      "price": 15.99,
+      "category": "foods",
+      "subCategory": "medium"
     }
   ]
 }
