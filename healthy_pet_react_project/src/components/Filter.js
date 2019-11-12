@@ -7,6 +7,18 @@ const Filter = (props) => {
   const [categoryVal, setCategoryVal] = useState("all");
   const [subCategoryVal, setSubCategoryVal] = useState("all");
   const [sortBy, setSortBy] = useState("all");
+  const [showFilter, setShowFilter] = useState(false);
+  window.addEventListener("resize", function() {
+    if(window.innerWidth >= 700) {
+      setShowFilter(false);
+    }
+  });
+
+  const handleHamburger = () => {
+
+    setShowFilter(!showFilter);
+    
+  }
 
   const handleCategoryChange = (e) => {
     setCategoryVal(e.target.value);
@@ -31,9 +43,6 @@ const Filter = (props) => {
   }
 
   const handleSortByChange = (e) => {
-    setSortBy(e.target.value);
-    console.log(sortBy)
-    console.log("testing",e.target.value)
     if(e.target.value === "highest") {
       const highestFirst = props.items.products.sort((a, b) => {
         return b.price - a.price;
@@ -89,6 +98,9 @@ const Filter = (props) => {
 
   const handleReset = (e) => {
     e.preventDefault();
+    setCategoryVal("all")
+    setSubCategoryVal("all")
+    setSortBy("all")
     axios.get("http://localhost:3001/products")
       .then(res => {
         props.handleItems({isLoading: false, products: res.data})
@@ -101,7 +113,7 @@ const Filter = (props) => {
   return (
     <div className="container">
       <div className="filter">
-        <img src={hamburgerMenu} alt="hamburger menu"/>
+        <img src={hamburgerMenu} alt="hamburger menu" onClick={handleHamburger}/>
         <div className="filter-option">
           <select name="categories" id="categories" value={categoryVal} onChange={handleCategoryChange}>
             <option value="all">
@@ -115,7 +127,7 @@ const Filter = (props) => {
             </option>
             {subCategories}
           </select>
-          <select name="sort-by" id="sort-by" onChange={handleSortByChange}>
+          <select name="sort-by" value={sortBy} id="sort-by" onChange={handleSortByChange}>
             <option>
               Sorted By
             </option>
@@ -130,6 +142,35 @@ const Filter = (props) => {
         </div>
         <p><strong>{props.items.products.length}</strong> products</p>
       </div>
+
+    { showFilter ? (
+    <div className="filter-option-hamburger">
+          <select name="categories" id="categories" value={categoryVal} onChange={handleCategoryChange}>
+            <option value="all">
+              {Object.keys(numCategories).length} categories selected
+            </option>
+            {categories}
+          </select>
+          <select name="sub-categories" id="sub-categories" value={subCategoryVal} onChange={handleSubCategoryChange}>
+            <option value="all">
+              {Object.keys(numCategories).length} subcategories selected
+            </option>
+            {subCategories}
+          </select>
+          <select name="sort-by" value={sortBy} id="sort-by" onChange={handleSortByChange}>
+            <option>
+              Sorted By
+            </option>
+            <option value="highest">
+              Price Highest
+            </option>
+            <option value="lowest">
+              Price Lowest
+            </option>
+          </select>
+          <button onClick={handleReset}>Reset</button>
+        </div>
+    ) : null}
     </div>
   )
 }

@@ -87,16 +87,22 @@ nav .container ul .logo, .search-bar form, .message-cart {
 }
 
 .filter-option select {
+  /* border: none;
+  border-radius: 0px;
+  padding: 10px 5px; */
   border: none;
+  height: 20px;
   border-radius: 0px;
   padding: 10px 5px;
+  margin-bottom: 10px;
 }
 
 .filter-option button {
-  padding: 4px;
+  padding: 5px;
   background-color: #da5350;
   color: white;
   border-radius: 1px;
+  
 }
 
 .items {
@@ -172,3 +178,31 @@ nav .container ul .logo, .search-bar form, .message-cart {
     display: inline-flex;
   }
 }
+
+.filter-option-hamburger {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 30px;
+  position: absolute;
+  width: 50%;
+  box-shadow: 0px 2px 5px #dcdcdc;
+  
+}
+
+.filter-option-hamburger select {
+  border: none;
+  height: 40px;
+  border-radius: 0px;
+  padding: 10px 5px;
+  margin-bottom: 10px;
+}
+
+.filter-option-hamburger button {
+  padding: 4px;
+  background-color: #da5350;
+  color: white;
+  border-radius: 1px;
+  height: 40px;
+}
+
